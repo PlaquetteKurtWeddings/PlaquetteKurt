@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kurt Weddings – Plaquette</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap">
+<style>
+/* VOICE: sobre, la plaquette parle d'elle-même.
+   IDEA: un livret que l'on feuillette, une page à la fois.
+   PICTURE: chaque page de la plaquette, en entier.
+   COLOUR and TYPE: fond neutre clair, doré #A67C2E pour les repères ; Open Sans.
+   LAYOUT: pages côte à côte, défilement horizontal page par page. */
+:root{color-scheme:light;--bg:#F1EEE8;--ink:#111;--gold:#A67C2E}
+*{box-sizing:border-box;min-width:0}
+html,body{margin:0;height:100%;background:var(--bg);color:var(--ink);font:15px/1.4 'Open Sans',system-ui,sans-serif;overflow:hidden}
+.book{height:100%;display:flex;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none}
+.book::-webkit-scrollbar{display:none}
+.page{flex:0 0 100%;height:100%;scroll-snap-align:center;display:grid;place-items:center;padding:clamp(12px,3vw,40px) clamp(10px,4vw,72px) 64px}
+.page img{max-width:100%;max-height:calc(100vh - 110px);max-height:calc(100dvh - 110px);width:auto;height:auto;display:block;box-shadow:0 10px 40px rgba(0,0,0,.12);background:#fff}
+.bar{position:fixed;left:0;right:0;bottom:0;height:56px;display:flex;align-items:center;justify-content:center;gap:16px}
+.nav{width:44px;height:44px;border-radius:50%;border:1px solid var(--gold);background:#fff;color:var(--gold);display:grid;place-items:center;cursor:pointer}
+.nav:disabled{opacity:.3;cursor:default}
+.nav:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.count{min-width:64px;text-align:center;font-weight:600;letter-spacing:.06em}
+@media(prefers-reduced-motion:reduce){.book{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<main class="book" id="book" aria-label="Plaquette Kurt Weddings, page par page"></main>
+<nav class="bar" aria-label="Navigation">
+  <button class="nav" id="prev" type="button" aria-label="Page précédente"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button>
+  <span class="count" id="count">1 / 9</span>
+  <button class="nav" id="next" type="button" aria-label="Page suivante"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
+</nav>
+<script>
+{
+const N=9, book=document.getElementById('book');
+const alts=['Couverture','Galerie 1','Galerie 2','Offre photo 1','Offre photo 2','Offre photo 3','Option argentique','Offres vidéo','Contact'];
+book.innerHTML=Array.from({length:N},(_,i)=>`<section class="page"><img src="pages/p${i+1}.jpg" alt="Page ${i+1} – ${alts[i]}" ${i>1?'loading="lazy"':''}></section>`).join('');
+const prev=document.getElementById('prev'),next=document.getElementById('next'),count=document.getElementById('count');
+const cur=()=>Math.round(book.scrollLeft/book.clientWidth);
+const go=i=>book.scrollTo({left:Math.max(0,Math.min(N-1,i))*book.clientWidth});
+const upd=()=>{const i=cur();count.textContent=`${i+1} / ${N}`;prev.disabled=i===0;next.disabled=i===N-1};
+prev.addEventListener('click',()=>go(cur()-1));
+next.addEventListener('click',()=>go(cur()+1));
+book.addEventListener('scroll',()=>requestAnimationFrame(upd),{passive:true});
+document.addEventListener('keydown',e=>{if(e.key==='ArrowRight')go(cur()+1);if(e.key==='ArrowLeft')go(cur()-1)});
+window.addEventListener('resize',()=>go(cur()));
+upd();
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" id="vp" content="width=device-width, initial-scale=1">
+<script>
+(function(){var w=Math.min(screen.width,screen.height);if(window.innerWidth<1000||w<1000){document.getElementById('vp').setAttribute('content','width=1280');document.documentElement.classList.add('fixed')}})();
+</script>
+<title>Kurt Weddings – Tarifs</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Open+Sans:wght@300;400;600;700&display=swap">
+<style>
+/* VOICE: tendre, élégant, beaucoup d'air — comme la plaquette PDF.
+   IDEA: un album de tirages argentiques que l'on feuillette en descendant.
+   PICTURE: tes photos dans tes propres bordures noires, en grand.
+   COLOUR and TYPE: blanc, encre #111, doré du logo #A67C2E ; Cormorant Garamond + Open Sans.
+   LAYOUT: une colonne sur téléphone, photo / texte alternés sur grand écran. */
+:root{color-scheme:light;--bg:#fff;--ink:#111;--soft:#4a4a4a;--gold:#A67C2E;--olive:#5B6236;--line:#e6e2da}
+*{box-sizing:border-box;min-width:0}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 'Open Sans',system-ui,sans-serif;overflow-x:clip}
+img{display:block;max-width:100%;height:auto}
+.wrap{max-width:1040px;margin:0 auto;padding:0 max(5vw,18px)}
+.serif{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500}
+h1,h2{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;line-height:1.05;margin:0;text-wrap:balance}
+.hero{padding:clamp(28px,6vw,64px) 0 clamp(40px,7vw,80px);text-align:center}
+.hero .logo{width:min(300px,64vw);margin:0 auto}
+.hero h1{font-size:22px;margin:14px 0 18px}
+.hero h1 em{color:var(--olive)}
+.hero .rule{margin:0 0 28px}
+.hero .cover{width:min(560px,100%);margin:0 auto}
+.rule{display:flex;align-items:center;justify-content:center;gap:14px;font-size:12px;font-weight:700;letter-spacing:.18em}
+.rule::before,.rule::after{content:"";width:56px;height:2px;background:var(--gold)}
+
+/* Couverture */
+
+/* Formules */
+.offer{padding:clamp(40px,7vw,88px) 0;border-top:1px solid var(--line)}
+.offer-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:clamp(24px,5vw,64px);align-items:start}
+.offer-grid{align-items:center}
+.offer.photo .offer-grid{grid-template-columns:minmax(0,6fr) minmax(0,4fr)}
+.offer.film .offer-grid{grid-template-columns:minmax(0,5fr) minmax(0,6fr)}
+.pics{display:grid;gap:14px;max-width:440px;width:100%;margin:0 auto}
+.pics img{width:100%;height:auto}
+.vids{display:grid;gap:28px;max-width:440px;width:100%;margin:0 auto}
+.vid{margin:0}
+.vid .frame{position:relative;aspect-ratio:16/9;background:#111;border-radius:6px;overflow:hidden;display:grid;place-items:center;color:#f3efe6}
+.vid .frame video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.vid .frame:fullscreen{border-radius:0}
+.play{width:56px;height:56px;border-radius:50%;border:1.5px solid #f3efe6;display:grid;place-items:center}
+.full{position:absolute;right:8px;bottom:8px;width:44px;height:44px;border:0;border-radius:50%;background:rgba(255,255,255,.14);color:#f3efe6;display:grid;place-items:center;cursor:pointer}
+.full:hover,.full:focus-visible{background:rgba(255,255,255,.28);outline:2px solid #f3efe6;outline-offset:2px}
+.vid figcaption{font-size:13px;font-weight:600;margin-top:7px}
+.vid figcaption span{font-weight:400;color:var(--soft)}
+.leica{max-width:720px;margin-top:clamp(36px,5vw,56px);text-align:center}
+.leica-k{display:flex;align-items:center;justify-content:center;gap:14px;margin:0 0 12px}
+.leica-k img{width:44px;height:44px}
+.leica-k::before,.leica-k::after{content:"";width:40px;height:1px;background:var(--gold)}
+.leica h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:clamp(26px,3.4vw,32px);line-height:1.1;margin:0 0 10px}
+.leica p:last-child{color:var(--soft);margin:0 auto;max-width:62ch}
+.extras{max-width:820px;width:100%;margin-inline:auto;align-self:center;text-align:center}
+.opts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:14px;text-align:left}
+.opts .option{margin-top:0}
+.offer.extras{min-height:0!important}
+.tiers{display:grid;gap:34px;margin:14px 0 28px}
+.tier{border-top:1px solid var(--line);padding-top:20px}
+.tier-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:12px}
+.tier-head strong{font-family:'Open Sans',system-ui,sans-serif;font-size:30px;font-weight:300;letter-spacing:.03em;line-height:1}
+.tier-price{font-size:30px;font-weight:300;letter-spacing:.03em;white-space:nowrap}
+.tier ul{list-style:none;margin:0;padding:0;color:var(--ink);font-size:18px;display:grid;gap:6px}
+.tier li::before{content:"— ";color:var(--gold)}
+.option .opt-head{margin-bottom:0}
+.arg-sec .arg-txt{max-width:660px;margin:0 auto clamp(28px,4vw,44px);text-align:center}
+.arg-sec .arg-txt .price{margin:6px 0 14px}
+.arg-sec .arg-txt p{color:var(--soft);margin:0}
+.arg-pics{max-width:1240px;margin:0 auto;display:flex;flex-direction:column;gap:8px}
+.arow{display:flex;gap:8px}
+.arow img{width:0;height:auto}
+.duo-txt p{text-align:justify;text-align-last:left;hyphens:auto;-webkit-hyphens:auto}.duo-l p{text-align-last:left}
+.sec{padding:clamp(56px,8vw,110px) 0;border-top:1px solid var(--line)}
+.sec-head{text-align:center;margin-bottom:clamp(28px,4vw,48px)}
+.sec-head h2{font-size:clamp(34px,4.4vw,52px);margin-top:4px}
+.strip{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(12px,2vw,24px);max-width:960px;margin:0 auto}
+.strip img{width:100%;height:auto}
+.solo{text-align:center;margin:clamp(32px,4vw,48px) auto 0}
+.solo-price{font-size:clamp(40px,5vw,56px);font-weight:300;letter-spacing:.03em;margin:0;line-height:1}
+.solo-line{font-size:19px;margin:14px 0 0}
+.optrow{display:flex;flex-wrap:wrap;justify-content:center;gap:14px;margin:clamp(28px,4vw,40px) auto 0;max-width:760px}
+.optrow .option{margin:0;flex:1 1 280px;max-width:380px;padding:14px 30px 14px 20px;display:flex;align-items:center;min-height:64px}
+.optrow .opt-head{width:100%;align-items:center}
+.sec>.wrap{max-width:1440px}
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(14px,1.6vw,24px)}
+.sec .optrow,.sec .leica{max-width:760px}
+.sec .optrow{max-width:1000px}
+.duo-txt{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:clamp(28px,4vw,56px);align-items:start;max-width:1100px;margin:clamp(56px,7vw,88px) auto 0}
+.duo-txt h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:clamp(28px,3vw,36px);line-height:1.1;margin:0 0 14px}
+.duo-txt p{color:var(--soft);margin:0 0 12px}
+.duo-l{text-align:right}.duo-r{text-align:left}
+.duo-mid{display:flex;flex-direction:column;align-items:center;gap:14px;align-self:stretch;justify-content:center}
+.duo-mid span{width:1px;height:56px;background:var(--gold)}
+.duo-mid img{width:44px;height:44px}
+@media(max-width:720px){.duo-txt{grid-template-columns:minmax(0,1fr)}.duo-l,.duo-r{text-align:center}.duo-mid{flex-direction:row}.duo-mid span{width:40px;height:1px}}
+.craft{max-width:720px;margin:clamp(48px,6vw,72px) auto 0;text-align:center}
+.craft h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:clamp(30px,3.6vw,40px);line-height:1.1;margin:0 0 16px}
+.craft p{color:var(--soft);margin:0 auto 12px;max-width:62ch}
+
+.card{display:flex;flex-direction:column}
+.card .vid{margin-bottom:22px}
+.vlink{display:block;text-decoration:none;color:inherit}
+.vlink .frame{transition:transform .25s ease}
+.vlink:hover .frame,.vlink:focus-visible .frame{transform:scale(1.015)}
+.vlink:focus-visible{outline:2px solid var(--gold);outline-offset:4px;border-radius:6px}
+.vlink:hover .play{background:rgba(255,255,255,.15)}
+.vid .frame .poster{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.vid .frame .play{position:relative;z-index:1;background:rgba(0,0,0,.25);backdrop-filter:blur(2px)}
+.vtag{z-index:1;text-shadow:0 1px 3px rgba(0,0,0,.6);position:absolute;left:12px;bottom:10px;font-size:12px;letter-spacing:.06em;color:#f3efe6;opacity:.8}
+.card-head{display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center;margin-bottom:16px}
+.card-head strong{font-size:26px;font-weight:300;letter-spacing:.04em}
+.card-head span{font-size:clamp(30px,3vw,38px);font-weight:300;letter-spacing:.03em;white-space:nowrap;color:var(--gold)}
+.card ul{list-style:none;margin:0;padding:16px 0 0;border-top:1px solid var(--line);display:grid;gap:8px;text-align:center;font-size:17px}
+.sec .leica{margin:clamp(48px,6vw,72px) auto 0;max-width:720px;text-align:center}
+@media(max-width:720px){.cards{grid-template-columns:minmax(0,1fr)}}
+.option{margin-top:14px;border:1px solid var(--gold);border-radius:6px;padding:14px 16px}
+.opt-head{display:flex;justify-content:space-between;gap:12px;align-items:baseline;margin-bottom:4px}
+.opt-head strong{font-size:16px;font-weight:600}
+.opt-head b{color:var(--gold);font-weight:600;white-space:nowrap}
+.option span{color:var(--soft);font-size:15px}
+.num{font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:24px;color:var(--gold)}
+.offer h2{font-size:clamp(34px,5vw,48px);margin:2px 0 14px}
+.lead{color:var(--soft);margin:0 0 18px;max-width:62ch}
+.price{font-family:'Open Sans',system-ui,sans-serif;font-size:34px;font-weight:300;letter-spacing:.04em;line-height:1;margin:0 0 26px;white-space:nowrap;color:var(--gold)}
+.feats{list-style:none;margin:0 0 22px;padding:0;display:grid;gap:18px}
+.feats li{border-top:1px solid var(--line);padding-top:14px}
+.feats strong{display:block;font-size:17px;font-weight:600;margin-bottom:3px}
+.feats span{color:var(--soft);font-size:15px}
+
+/* Emplacement vidéo */
+.video{margin-top:clamp(28px,4vw,48px);max-width:760px}
+.video .frame{position:relative;aspect-ratio:16/9;background:#111;border-radius:6px;overflow:hidden;display:grid;place-items:center;color:#f3efe6}
+.video .frame video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.play{width:72px;height:72px;border-radius:50%;border:1.5px solid #f3efe6;display:grid;place-items:center}
+.video .cap{display:flex;justify-content:center;flex-wrap:wrap;column-gap:10px;gap:12px;font-size:13px;color:var(--soft);margin-top:8px}
+.video .cap b{color:var(--ink);font-weight:600}
+.video .cap span::before{content:'· '}
+.txt{align-self:center}
+
+/* Galerie */
+.gallery{padding:clamp(40px,7vw,88px) 0;border-top:1px solid var(--line)}
+.gallery h2{font-size:clamp(34px,5vw,48px);text-align:center;margin-bottom:28px}
+.masonry{max-width:1240px;margin:0 auto;display:flex;flex-direction:column;gap:8px}
+.jrow{display:flex;gap:8px}
+.jrow img{display:block;object-fit:cover;flex:none}
+.gold-w{color:var(--gold);font-weight:600}
+.masonry .gi{margin:0;align-self:start}
+.masonry img{width:100%;height:auto;display:block}
+
+/* Discutons */
+.contact{padding:clamp(40px,7vw,88px) 0 clamp(48px,8vw,96px);border-top:1px solid var(--line);text-align:center}
+.contact .logo{width:min(220px,50vw);margin:0 auto 6px}
+.contact{display:flex;flex-direction:column}
+.contact .pic{width:min(560px,100%);margin:22px auto 30px;order:1}
+.contact-text{display:contents}
+.contact-text .rule{order:0}.contact-text .logo{order:0}.contact-text h2{order:2}.contact-text .lines{order:3}
+.contact h2{font-size:clamp(44px,7vw,64px);margin-bottom:22px}
+.lines{display:grid;gap:10px;max-width:420px;margin:0 auto 30px}
+.lines div{display:flex;justify-content:space-between;gap:16px;border-top:1px solid var(--gold);padding-top:10px;font-size:15px}
+.lines a{color:var(--ink);text-decoration:none}.lines a:hover{text-decoration:underline}
+.lines small{font-size:12px;font-weight:700;letter-spacing:.12em}
+.note{font-size:13px;color:var(--soft);margin-top:18px}
+
+@media(max-width:720px){
+  .offer-grid{grid-template-columns:minmax(0,1fr)}
+  .offer.photo .offer-grid,.offer.film .offer-grid{grid-template-columns:minmax(0,1fr)}
+  .offer.photo .pics{order:-1;max-width:420px}
+  .vids{max-width:none;order:1}
+  .opts{grid-template-columns:minmax(0,1fr)}
+}
+
+/* Ordinateur portable / écran large */
+@media(min-width:1000px){
+  .wrap{max-width:1180px}
+  .hero{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:clamp(40px,6vw,96px);align-items:center;text-align:left;min-height:100vh;padding-block:40px}
+  .hero-text{display:flex;flex-direction:column;align-items:flex-start;padding-left:clamp(60px,9vw,140px)}
+  .hero .logo{width:min(340px,28vw);margin:0}
+  .hero h1{font-size:28px;margin:22px 0 20px}
+  .hero .rule{justify-content:flex-start;margin:0}
+  .hero .rule::before{display:none}
+  .hero .cover{width:auto;height:calc(100vh - 80px);max-height:860px;min-height:520px}
+  .offer{min-height:100vh;display:flex;flex-direction:column;justify-content:center}
+  .offer.photo .offer-grid{grid-template-columns:minmax(0,1fr) auto}
+  .offer.film .offer-grid{grid-template-columns:auto minmax(0,1fr)}
+  .pics{width:calc((100vh - 120px) * 0.739);max-width:480px;min-width:300px}
+  .vids{width:calc((100vh - 120px - 56px) / 3 * 16 / 9);max-width:500px;min-width:320px}
+  .txt{max-width:560px}
+  .leica{margin-top:40px}
+  .contact{display:grid;grid-template-columns:auto minmax(0,1fr);gap:clamp(40px,6vw,96px);align-items:center;text-align:left;min-height:100vh}
+  .contact-text{display:flex;flex-direction:column;align-items:flex-start}
+  .contact .pic{width:min(760px,54vw);height:auto;margin:0}
+  .contact .logo{margin:10px 0 18px}
+  .contact .rule{justify-content:flex-start;margin:0}
+  .contact .rule::before{display:none}
+  .lines{margin:0;width:100%;max-width:440px}
+}
+.fixed .hero,.fixed .offer,.fixed .contact{min-height:0}
+.fixed .hero{padding-block:72px}
+.fixed .offer{padding-block:72px}
+.fixed .hero .cover{height:820px;max-height:none}
+.fixed .contact .pic{width:720px;height:auto;max-height:none}
+.fixed .pics{width:440px}
+.fixed .vids{width:460px}
+@media(prefers-reduced-motion:no-preference){
+  .reveal{opacity:0;transform:translateY(18px);transition:opacity .8s ease,transform .8s ease}
+  .reveal.in{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<header class="hero wrap">
+  <div class="hero-text">
+    <img class="logo" src="img/logo.png" alt="Kurt Weddings">
+    <h1>Guide des Tarifs</h1>
+    <p class="rule">PHOTO · VIDÉO</p>
+  </div>
+  <img class="cover" src="img/couverture-fin.jpg" alt="Mariés main dans la main dans les vignes" width="1080" height="1480">
+</header>
+
+<section class="gallery">
+  <div class="wrap">
+    <h2>Galerie</h2>
+    <div class="masonry" id="gallery"></div>
+  </div>
+</section>
+
+<main id="offers"></main>
+
+
+
+<section class="contact wrap">
+  <img class="pic reveal" src="img/discutons-2.jpg" alt="Mariée sous son voile, en noir et blanc" width="1500" height="1000">
+  <div class="contact-text">
+    <p class="rule">PRÉSENTÉ PAR</p>
+    <img class="logo" src="img/logo.png" alt="Kurt Weddings">
+    <div class="lines">
+      <div><small>INSTAGRAM</small><a href="https://www.instagram.com/kurt_weddings/">@kurt_weddings</a></div>
+      <div><small>TÉLÉPHONE</small><a href="tel:+33652925243">06 52 92 52 43</a></div>
+    </div>
+  </div>
+</section>
+
+<script>
+{
+const offers=[
+ {kind:'photo',n:'Un',leica:["Tout est photographié au Leica.","Depuis plus d'un siècle, Leica fabrique à Wetzlar, en Allemagne, des appareils devenus légendaires : c'est la marque qui a popularisé l'appareil 35 mm dans les années 1920, et celle de photographes comme Henri Cartier-Bresson. Nous photographions l'intégralité de votre mariage au Leica, pour des images au rendu doux et naturel. Peu de photographes de mariage font ce choix : travailler au Leica demande de l'exigence et du savoir-faire. C'est ce qui rend vos images rares, et d'autant plus précieuses."],name:'',tag:'Photographie',price:'2 000 €',
+  pics:[['formule-1','Mariés devant une bâtisse blanche'],['formule-1b','Mariée à la fenêtre'],['formule-1c','Le marié et ses témoins']],
+  lead:"Toute votre journée racontée en images, des préparatifs du matin jusqu'à la fête.",
+  feats:[["Prestation photo de toute la journée.","Des préparatifs du matin jusqu'à la soirée : la cérémonie, les portraits, vos proches et la fête, chaque moment est photographié."]],
+  options:[["Shooting d'engagement","à partir de 300 €","Une séance à deux avant le mariage, pour apprendre à se connaître, être à l'aise devant l'objectif et repartir avec de belles images de vous."]]},
+ {kind:'film',name:'',tag:'Vidéographie',leica:["Tout est filmé au Leica.","Leica, ce n'est pas que la photo. Les mêmes optiques allemandes qui ont fait la réputation de la marque filment aussi : des couleurs fidèles, des peaux naturelles, des flous doux et un rendu presque cinématographique. Votre film est entièrement tourné au Leica, pour garder la même signature visuelle que vos photos. Et si les photographes Leica sont rares, les vidéastes le sont encore plus : un film de mariage tourné au Leica est une pièce à part, aussi rare que précieuse."],
+  vids:['Teaser','Extrait du film','Plans drone'],
+  links:["https://vimeo.com/1248501979","https://vimeo.com/1248502444","https://vimeo.com/1248502961"],
+  tiers:[["Offre 1","1 800 €",["10 h de prestation","Teaser","Film de 5 min"]],
+   ["Offre 2","2 200 €",["12 h de prestation","Teaser","Film de 8 min"]],
+   ["Offre 3","3 000 €",["12 h de prestation + brunch de 2 h","Teaser","Film de 10 min"]]],
+  options:[["Drone","+ 300 €"],["Shooting d'engagement","à partir de 300 €"],["Discours en entier","+ 200 €"]],
+  craft:["Une image de cinéma.",
+   "Chaque film est tourné en 6K, une définition issue du cinéma qui préserve chaque détail, puis étalonné à la main avec une colorimétrie inspirée du grand écran, pour une identité visuelle cinématique.",
+   "Nous filmons avec un objectif anamorphique, l'optique des grands films. Entièrement manuel, la mise au point se fait à la main à chaque plan : exigeant et rarement utilisé en mariage, il offre pourtant un cadre large, des flous ovales et des reflets de lumière qu'aucune autre optique ne reproduit."]}
+];
+{const p=offers.findIndex(x=>x.kind==='photo');const base=offers[p];
+ const over=[{tag:'Offre 1',pics:[['offre-photo-1','Mariée dans une ruelle ensoleillée, le marié au premier plan']],leica:["Une histoire de plus d'un siècle.","Née à Wetzlar, en Allemagne, la marque Leica a inventé l'appareil photo 35 mm dans les années 1920 et a accompagné les plus grands photographes, d'Henri Cartier-Bresson aux reporters du monde entier. Nous perpétuons cet héritage en photographiant votre mariage au Leica."],price:'2 200 €',lead:"L'essentiel de votre mariage, avec la même exigence : une formule simple pour garder un beau souvenir des moments qui comptent.",feats:[["Prestation de 10 heures.","Dix heures à vos côtés pour raconter les moments forts de votre journée : la cérémonie, les portraits, vos proches et le début de la fête."],["600 photos.","600 images retouchées avec soin, livrées en haute résolution dans une galerie en ligne privée, simple à partager et à télécharger."]]},{tag:'Offre 2',pics:[['offre-photo-2','Les mariés front contre front dans la lumière du soir']],leica:["L'exigence Leica, aujourd'hui.","Chaque boîtier et chaque optique Leica est encore assemblé à la main en Allemagne, avec une précision rare. Le résultat se voit dans chaque image : un piqué remarquable, des couleurs fidèles, des peaux naturelles et des flous d'une grande douceur."],price:'2 500 €',lead:"Toute votre journée racontée en images, des préparatifs du matin jusqu'à la soirée, avec plus de temps pour les détails, vos proches et les instants spontanés.",feats:[["Prestation de 12 heures.","Douze heures à vos côtés, des préparatifs du matin jusqu'à la soirée, pour ne rien manquer de votre journée."],["800 photos.","800 images retouchées avec soin, livrées en haute résolution dans une galerie en ligne privée, simple à partager et à télécharger."]]},{tag:'Offre 3',pics:[['offre-photo-3','Les mariés enlacés au coucher du soleil']],leica:["Une signature rare et précieuse.","Très peu de photographes de mariage travaillent au Leica : c'est un choix exigeant, qui demande du temps et du savoir-faire. C'est aussi ce qui rend vos images uniques. Votre mariage n'est pas photographié comme les autres, et vos souvenirs n'en sont que plus précieux."],price:'3 050 €',lead:"L'expérience complète : votre mariage raconté du premier au dernier instant, jusqu'au brunch du lendemain.",feats:[["Prestation de 12 heures + brunch de 2 heures.","Toute votre journée photographiée, des préparatifs à la soirée, puis deux heures le lendemain pour capturer l'ambiance détendue du brunch et les derniers moments avec vos proches."],["1 000 photos.","1 000 images retouchées avec soin, livrées en haute résolution dans une galerie en ligne privée, simple à partager et à télécharger."]]}];
+ const copies=base.pics.map((pic,i)=>Object.assign({},base,{pics:[pic]},over[i]||{}));
+ offers.splice(p,1,...copies);}
+const esc=s=>s.replace(/&/g,'&amp;').replace(/</g,'&lt;');
+const txt=o=>`<div class="txt">
+   <span class="num">${o.tag}</span>
+   ${o.name?`<h2>${esc(o.name)}</h2>`:''}
+   ${o.tiers?`<div class="tiers">${o.tiers.map(t=>`<div class="tier"><div class="tier-head"><strong>${esc(t[0])}</strong><span class="tier-price">${t[1]}</span></div><ul>${t[2].map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div>`).join('')}</div>`:`<p class="lead">${esc(o.lead)}</p>
+   <p class="price">${o.price}</p>
+   <ul class="feats">${o.feats.map(f=>`<li><strong>${esc(f[0])}</strong><span>${esc(f[1])}</span></li>`).join('')}</ul>`}
+   ${(o.options||[]).map(op=>`<div class="option"><div class="opt-head"><strong>${esc(op[0])}</strong><b>${op[1]}</b></div>${op[2]?`<span>${esc(op[2])}</span>`:''}</div>`).join('')}
+  </div>`;
+const media=o=>o.kind==='photo'
+ ? `<div class="pics reveal">${o.pics.map(p=>`<img src="img/${p[0]}.jpg" alt="${esc(p[1])}" width="680" height="920">`).join('')}</div>`
+ : `<div class="vids reveal">${o.vids.map((v,i)=>`<figure class="vid"><div class="frame" id="vid-${i}" aria-label="${esc(v)}"><div class="play"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></div><button class="full" type="button" data-target="vid-${i}" aria-label="Voir en plein écran"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button></div></figure>`).join('')}</div>`;
+const optRow=ops=>`<div class="optrow">${ops.map(op=>`<div class="option"><div class="opt-head"><strong>${esc(op[0])}</strong><b>${op[1]}</b></div></div>`).join('')}</div>`;
+const playI=`<div class="play"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></div>`;
+const fullB=i=>`<button class="full" type="button" data-target="vid-${i}" aria-label="Voir en plein écran"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button>`;
+const filmSec=F=>`
+<section class="sec">
+ <div class="wrap">
+  <header class="sec-head"><span class="num">Vidéographie</span><h2>Votre journée, en film</h2></header>
+  <div class="cards">${F.tiers.map((t,i)=>`<article class="card reveal">
+    <a class="vid vlink" href="${F.links[i]}" target="_blank" rel="noopener" aria-label="Voir la vidéo de l'${esc(t[0])} sur Vimeo"><div class="frame"><img class="poster" src="img/apercu-video-${i+1}.jpg" alt="">${playI}</div></a>
+    <div class="card-head"><strong>${esc(t[0])}</strong><span>${t[1]}</span></div>
+    <ul>${t[2].map(x=>`<li>${esc(x)}</li>`).join('')}</ul>
+   </article>`).join('')}</div>
+  ${optRow(F.options)}
+  <div class="duo-txt reveal">
+   <div class="duo-l"><h3>${esc(F.leica[0])}</h3><p>${esc(F.leica[1])}</p></div>
+   <div class="duo-mid" aria-hidden="true"><span></span><img src="img/leica.png" alt="" width="44" height="44"><span></span></div>
+   <div class="duo-r"><h3>${esc(F.craft[0])}</h3>${F.craft.slice(1).map(p=>`<p>${esc(p).replace('anamorphique','<span class="gold-w">anamorphique</span>')}</p>`).join('')}</div>
+  </div>
+ </div>
+</section>`;
+const argSec=`<section class="sec arg-sec"><div class="wrap"><header class="sec-head"><span class="num">Option argentique</span><h2>Votre journée, sur pellicule</h2></header><div class="arg-txt"><p class="price">+ 500 €</p><p><strong>50 photos argentiques</strong> en plus de votre galerie. Photographiées sur pellicule, elles ont un grain, des couleurs et une douceur que le numérique ne reproduit pas : des images intemporelles, à garder toute une vie.</p></div><div class="arg-pics reveal"><div class="arow"><img src="img/argent-5.jpg" alt="Le marié sur pellicule" loading="lazy" style="flex:0.663 1 0;aspect-ratio:0.663"><img src="img/argent-1.jpg" alt="Regard complice de la mariée" loading="lazy" style="flex:1.508 1 0;aspect-ratio:1.508"><img src="img/argent-7.jpg" alt="Les mariés devant le mas" loading="lazy" style="flex:0.816 1 0;aspect-ratio:0.816"><img src="img/argent-4.jpg" alt="Les mariés sur le pont en bois" loading="lazy" style="flex:1.225 1 0;aspect-ratio:1.225"></div><div class="arow"><img src="img/argent-3.jpg" alt="Les mariés dans la prairie" loading="lazy" style="flex:1.508 1 0;aspect-ratio:1.508"><img src="img/argent-6.jpg" alt="La mariée sur pellicule" loading="lazy" style="flex:0.663 1 0;aspect-ratio:0.663"><img src="img/argent-8.jpg" alt="Portrait de la mariée" loading="lazy" style="flex:0.816 1 0;aspect-ratio:0.816"><img src="img/argent-2.jpg" alt="Mariée de dos, voile sur l’herbe" loading="lazy" style="flex:0.663 1 0;aspect-ratio:0.663"></div></div></div></section>`;
+document.getElementById('offers').innerHTML=offers.map(o=>o.kind==='film'?argSec+filmSec(o):`
+<section class="offer ${o.kind}">
+ ${o.kind==='extras'?`<div class="wrap extras"><span class="num">Options vidéo</span><div class="opts">${o.options.map(op=>`<div class="option"><div class="opt-head"><strong>${esc(op[0])}</strong><b>${op[1]}</b></div>${op[2]?`<span>${esc(op[2])}</span>`:''}</div>`).join('')}</div></div>`:`<div class="wrap offer-grid">${o.kind==='photo'?txt(o)+media(o):media(o)+txt(o)}</div>`}
+ ${o.leica?`<aside class="wrap leica reveal"><p class="leica-k"><img src="img/leica.png" alt="Leica" width="44" height="44"></p><h3>${esc(o.leica[0])}</h3><p>${esc(o.leica[1])}</p></aside>`:''}
+</section>`).join('');
+document.querySelectorAll('.vlink').forEach(a=>a.addEventListener('click',e=>{
+  const id=(a.href.match(/vimeo\.com\/(\d+)/)||[])[1]; if(!id) return;
+  e.preventDefault();
+  const f=a.querySelector('.frame');
+  f.innerHTML=`<iframe src="https://player.vimeo.com/video/${id}?autoplay=1&title=0&byline=0&portrait=0&dnt=1" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Vidéo Kurt Weddings" style="position:absolute;inset:0;width:100%;height:100%;border:0"></iframe>`;
+  const d=document.createElement('div'); d.className='vid'; d.appendChild(f); a.replaceWith(d);
+}));
+document.querySelectorAll('.full').forEach(btn=>btn.addEventListener('click',()=>{
+  const el=document.getElementById(btn.dataset.target);
+  try{const r=el.requestFullscreen?el.requestFullscreen():el.webkitRequestFullscreen&&el.webkitRequestFullscreen(); if(r&&r.catch) r.catch(()=>{});}catch(e){}
+}));
+const galRows=[[["sg-4", "Mariée souriante près de la fenêtre"], ["sg-30", "Émotion de la mère pendant les préparatifs"], ["sg-32", "Bague Chaumet et parfum"], ["sg-14", "Mariée à la couronne de fleurs"], ["sg-29", "Escarpins en noir et blanc"], ["sg-18", "Préparatifs en robe rouge"]], [["sg-12", "Mariée au bouquet d’hortensias"], ["sg-13", "Le marié et ses témoins"], ["sg-9", "Baiser face à la mer"], ["sg-26", "Détail de la robe brodée"], ["sg-25", "Mariée sur le chemin au soleil couchant"]], [["sg-3", "Mariés au coucher du soleil"], ["sg-6", "Bateau Riva à Saint-Tropez"], ["sg-19", "Robe suspendue devant les miroirs"], ["sg-22", "Mariée au milieu des invités"], ["sg-8", "Regard de la mariée"], ["sg-28", "Emblème Rolls-Royce"]], [["sg-5", "Mariée sur le bateau Riva"], ["sg-1", "Table devant les champs de lavande"], ["sg-17", "Arrivée des mariés en Rolls-Royce"], ["sg-24", "Petit chien en robe rose"], ["sg-11", "Mariés complices dans le parc"], ["sg-33", "Bouquet de table coloré"]], [["sg-15", "Table sous les oliviers"], ["sg-16", "Emblème Rolls-Royce en noir et blanc"], ["sg-2", "Silhouettes des mariés en contre-jour"], ["sg-31", "Invité devant l’arche de ballons"], ["sg-23", "Table numéro 5"]], [["sg-34", "Table ronde fleurie"], ["sg-21", "Mariés sous le voile"], ["sg-20", "Sandales de la mariée"], ["sg-7", "Fleurs et bougies"], ["sg-27", "Longue table sous les oliviers"], ["sg-10", "Herbes de la pampa"]]];
+const ar={'sg-32':1.499,'sg-30':0.667,'sg-19':1.505,'sg-4':1.499,'sg-18':1.499,'sg-29':0.667,'sg-20':1.499,'sg-14':1.499,'sg-26':0.666,'sg-12':1.502,'sg-22':1.505,'sg-11':0.666,'sg-25':1.502,'sg-21':0.667,'sg-3':1.501,'sg-8':0.5,'sg-9':1.499,'sg-5':1.499,'sg-6':0.667,'sg-17':1.499,'sg-28':1.499,'sg-13':0.5,'sg-16':1.499,'sg-2':0.5,'sg-24':1.502,'sg-1':0.668,'sg-15':1.502,'sg-27':0.666,'sg-23':0.5,'sg-33':1.499,'sg-34':1.499,'sg-7':1.502,'sg-10':1.502,'sg-31':1.499};
+{const G=document.getElementById('gallery');
+ const build=()=>{const W=G.clientWidth,gap=8;if(!W)return;
+  G.innerHTML=galRows.map(r=>{const its=r.map(g=>({g,a:1/(ar[g[0]]||1)}));const sm=its.reduce((x,i)=>x+i.a,0),h=(W-gap*(its.length-1))/sm;return `<div class="jrow" style="height:${h.toFixed(1)}px">`+its.map(it=>`<img src="img/${it.g[0]}.jpg" alt="${it.g[1]}" loading="lazy" style="width:${(it.a*h).toFixed(1)}px;height:${h.toFixed(1)}px">`).join('')+'</div>'}).join('');};
+ build();let lw=0;new ResizeObserver(()=>{if(G.clientWidth!==lw){lw=G.clientWidth;build()}}).observe(G);}
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{rootMargin:'0px 0px -8% 0px'});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+}
+</script>
+</body>
+</html>
